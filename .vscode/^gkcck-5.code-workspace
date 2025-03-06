@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.css": "tailwindcss"
+    },
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "sqlite3",
+        "database": "${workspaceFolder:cck}/src/lib/content/db.sqlite3"
+      }
+    ],
+    "markdownlint.config": {
+      "MD033": { "allowed_elements": ["font", "small", "span"] }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /admin
+Disallow: /search
+Sitemap: https://gkcck.daks.dev/sitemap.xml
+#

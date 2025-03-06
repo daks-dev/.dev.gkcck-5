@@ -1,0 +1,36 @@
+{
+  "ic": [
+    "outline-location-on",
+    "outline-settings",
+    "round-account-circle",
+    "round-alternate-email",
+    "round-apps",
+    "round-chevron-right",
+    "round-close",
+    "round-format-list-bulleted",
+    "round-forward",
+    "round-link",
+    "round-mail-outline",
+    "round-map",
+    "round-menu",
+    "round-minus",
+    "round-phone-android",
+    "round-phone-in-talk",
+    "round-play-arrow",
+    "round-plus",
+    "round-search",
+    "round-search-off",
+    "round-touch-app",
+    "round-zoom-in",
+    "round-zoom-out-map"
+  ],
+  "line-md": [
+    "home-simple",
+    "home-simple-twotone",
+    "moon-to-sunny-outline-loop-transition",
+    "sunny-outline-to-moon-loop-transition"
+  ],
+  "mdi": ["link-variant", "transfer-up"],
+  "svg-spinners": ["180-ring-with-bg", "8-dots-rotate", "clock"],
+  "wpf": ["search"]
+}
