@@ -56,7 +56,7 @@
       {subtitle}
       {description}>
       <img
-        class="bg-1/10 bg-loading bg-center bg-no-repeat"
+        class="bg-10% bg--loading bg-center bg-no-repeat"
         {src}
         {width}
         {height}

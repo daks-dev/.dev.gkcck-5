@@ -75,7 +75,7 @@
       h-[40vmax] grow sm:h-[30vmax] md:h-[25vmax] lg:h-auto">
     <YandexMap
       class="
-        bg-waiting bg-25% sm:bg-20%
+        bg--waiting bg-25% sm:bg-20%
         md:bg-10% min-h-full w-full overflow-hidden border-4 border-slate-400 bg-gray-100 bg-center
         bg-no-repeat dark:bg-slate-200"
       data={geodata} />

@@ -26,7 +26,7 @@
       class={[
         'hidden sm:block',
         'order-last my-4 aspect-video w-full overflow-hidden',
-        'bg-waiting bg-20% bg-neutral-300 bg-center bg-no-repeat',
+        'bg--waiting bg-20% bg-neutral-300 bg-center bg-no-repeat',
         'border-4 border-slate-400',
         'lg:float-left lg:mt-1.5 lg:mr-5 lg:mb-2 lg:aspect-4/3 lg:max-w-md',
         'lg:rounded-lg lg:border',

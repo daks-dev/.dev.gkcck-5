@@ -62,7 +62,7 @@
       <img
         class="
           lazy
-          bg-1/5 bg-loading
+          bg-20% bg--loading
           rounded-sm border bg-white bg-center bg-no-repeat drop-shadow-md"
         src={placeholder}
         data-src={images[0].src}
@@ -78,7 +78,7 @@
       <img
         class="
           lazy
-          bg-1/5 bg-loading
+          bg-20% bg--loading
           rounded-sm border bg-white bg-center bg-no-repeat drop-shadow-md"
         src={placeholder}
         data-src={images[1].src}
@@ -96,7 +96,7 @@
       <img
         class="
           lazy
-          bg-1/5 bg-loading
+          bg-20% bg--loading
           rounded-sm border bg-white bg-center bg-no-repeat drop-shadow-md"
         src={placeholder}
         data-src={images[2].src}
@@ -114,7 +114,7 @@
       <img
         class="
           lazy
-          bg-1/5 bg-loading
+          bg-20% bg--loading
           rounded-sm border bg-white bg-center bg-no-repeat drop-shadow-md"
         src={placeholder}
         data-src={images[3].src}

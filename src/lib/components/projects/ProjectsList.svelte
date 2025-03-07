@@ -158,7 +158,7 @@
   <div class="frame-xl hidden sm:block">
     <YandexMap
       class="
-        bg-waiting bg-25% sm:bg-20%
+        bg--waiting bg-25% sm:bg-20%
         md:bg-10% aspect-square w-full border-4 border-slate-400 bg-gray-100 bg-center bg-no-repeat
         lg:aspect-video dark:bg-slate-200"
       {projects}

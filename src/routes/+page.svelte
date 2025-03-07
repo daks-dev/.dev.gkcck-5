@@ -72,7 +72,7 @@
     class={[
       'hidden',
       'mx-auto mt-16 aspect-video w-full max-w-xl overflow-hidden',
-      'bg-waiting bg-20% bg-neutral-300 bg-center bg-no-repeat',
+      'bg--waiting bg-20% bg-neutral-300 bg-center bg-no-repeat',
       'border-4 border-slate-400',
       'transition duration-500',
       'sm:block',
