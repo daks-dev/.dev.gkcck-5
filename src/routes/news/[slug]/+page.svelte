@@ -6,7 +6,15 @@
 
   import type { PageData } from './$types';
   export let data: PageData;
-  const { slug, title, description, content, images } = data;
+  const { slug, title, description, content: Component, images } = data;
+
+  /*
+      <svelte:component this={content} />
+
+      {#await import(`$lib/content/news/${slug}/index.md`) then { default: Component }}
+        <Component />
+      {/await}
+  */
 
   onMount(() => document?.lazyload.update());
 </script>
@@ -37,7 +45,7 @@
       {/each}
     </div>
     <div class="content bp:text-lg/relaxed grow text-justify leading-relaxed">
-      <svelte:component this={content} />
+      <Component />
     </div>
   </div>
 </main>

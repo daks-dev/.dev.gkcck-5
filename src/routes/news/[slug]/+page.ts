@@ -34,13 +34,19 @@ export const load = (async ({ params }) => {
         metadata: { title, description },
         default: content
       } = (await promises.mds[md]()) as MDData;
-      content
+
       const images: ImageMetadata[] = [];
       for (const image of filter(promises.images, slug))
         images.push((await promises.images[image]()) as ImageMetadata);
       if (!images.length) images[0] = placeholder;
 
-      return { slug, title, description, content, images };
+      return {
+        slug,
+        title,
+        description,
+        content,
+        images
+      };
     }
     throw error(404, 'Not found [data]');
   }
