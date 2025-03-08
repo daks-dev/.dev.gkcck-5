@@ -27,7 +27,7 @@
     {#each items as { slug, title, description, images }}
       <a
         class="group oversee:text-sky-500 relative place-self-center"
-        href="/news/{slug}">
+        href={`/news/${slug}`}>
         <Sign
           class="top-10 left-2"
           link
@@ -52,32 +52,6 @@
             parse="YY-MM-DD" />
         </Figure>
       </a>
-      <!--article
-        class="flex gap-4 -bp:flex-col"
-        aria-posinset={idx + 1}
-        aria-setsize={items.length}>
-        <a
-          class="shadow-md shadow-gray-800 oversee:shadow-lg oversee:shadow-gray-900"
-          href="/news/{slug}">
-          {#if images.length}
-            {@const { src, width, height } = images[0]}
-            <img
-              class="aspect-video max-w-xs max-sm:w-full"
-              {src}
-              {width}
-              {height}
-              alt="" />
-          {/if}
-        </a>
-        <div>
-          <FormattedDate
-            class="mb-2 block tracking-wide text-slate-600 dark:text-slate-400"
-            date={slug}
-            parse="YY-MM-DD" />
-          <p class="font-semibold">{title}</p>
-          <p>{description}</p>
-        </div>
-      </article-->
     {:else}
       <p>Новостей нет!</p>
     {/each}

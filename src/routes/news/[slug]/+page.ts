@@ -4,6 +4,7 @@ import type { PageLoad } from './$types';
 import placeholder from '$lib/assets/images/logo.png?w=288&meta';
 
 // export const prerender = 'auto';
+// export const ssr = false;
 
 type MDData = {
   metadata: {
@@ -33,7 +34,7 @@ export const load = (async ({ params }) => {
         metadata: { title, description },
         default: content
       } = (await promises.mds[md]()) as MDData;
-
+      content
       const images: ImageMetadata[] = [];
       for (const image of filter(promises.images, slug))
         images.push((await promises.images[image]()) as ImageMetadata);

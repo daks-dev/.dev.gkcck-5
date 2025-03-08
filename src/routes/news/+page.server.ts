@@ -1,4 +1,5 @@
-import type { PageLoad } from './$types';
+// import type { EntryGenerator } from './$types';
+import type { PageServerLoad } from './$types';
 
 import placeholder from '$lib/assets/images/logo.png?w=288&aspect=16:9&fit=contain&meta';
 
@@ -10,11 +11,8 @@ type MDData = {
 };
 
 const promises = {
-  mds: import.meta.glob('$lib/content/news/**/index.md', {
-    eager: true
-  }),
+  mds: import.meta.glob('$lib/content/news/**/index.md'),
   images: import.meta.glob('$lib/content/news/**/*.(avif|gif|heic|heif|jpeg|jpg|png|tiff|webp)', {
-    eager: true,
     query: { w: 288, aspect: '16:9', fit: 'cover', meta: true },
     import: 'default'
   })
@@ -32,17 +30,15 @@ export const load = (async () => {
 
         const {
           metadata: { title, description }
-        } = promises.mds[path] as MDData;
-        // } = (await promises.mds[path]()) as MDData;
+        } = (await promises.mds[path]()) as MDData;
 
         const images: ImageMetadata[] = [];
         for (const image of filter(promises.images, slug))
-          images.push(promises.images[image] as ImageMetadata);
-          // images.push((await promises.images[image]()) as ImageMetadata);
+          images.push((await promises.images[image]()) as ImageMetadata);
         if (!images.length) images[0] = placeholder;
 
         return { slug, title, description, images };
       })
   );
   return { items };
-}) satisfies PageLoad;
+}) satisfies PageServerLoad;
