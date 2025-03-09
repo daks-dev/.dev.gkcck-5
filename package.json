@@ -1,6 +1,6 @@
 {
   "name": "@daks.dev/.dev.gkcck",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "GkCCK site",
   "private": false,
   "scripts": {
@@ -20,7 +20,7 @@
     "run:update": "pnpm up"
   },
   "devDependencies": {
-    "@daks.dev/svelte.sdk": "^0.2.8",
+    "@daks.dev/svelte.sdk": "^0.3.0",
     "@iconify/svelte": "^4.2.0",
     "@nanostores/persistent": "^0.10.2",
     "@playwright/test": "^1.51.0",
@@ -32,7 +32,7 @@
     "@types/better-sqlite3": "^7.6.12",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.13.9",
+    "@types/node": "^22.13.10",
     "@vitest/ui": "^3.0.8",
     "better-sqlite3": "^11.8.1",
     "cookie": "^1.0.2",
